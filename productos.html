@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sitio Web</title>
+  
+    <!-- Style  -->
+    <link rel="stylesheet" href="../css/style.css">
+
+  
+
+    <!-- BOOTSTRAP   -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/css/bootstrap.min.css">
+ 
+
+
+
+</head>
+<body>
+
+  <header class="mb-5 fixed-top color_header ">
+    <div class="border-bottom color_header">
+      <div class="container d-flex justify-content-between align-items-center py-1">
+        <h1 class="fs-6 align-self-center my-0">
+          <i class="fas fa-map-marker-alt"></i> Buenos Aires | 
+          <i class="fab fa-whatsapp"></i> 011-15-11111111 | 
+          <i class="fas fa-envelope"></i> <a href="mailto:necesitoInfo@necesito.com" class="text-dark">necesitoInfo@necesito.com</a>
+        </h1>
+        <div>
+          <select class="form-select" aria-label="Seleccionar idioma">
+            <option selected value="es">Español</option>
+            <option value="en">English</option>
+          </select>
+        </div>
+      </div>
+    </div>
+  
+    <nav class="navbar navbar-expand-lg navbar-light bg-body-tertiary">
+      <div class="container">
+        <a class="navbar-brand fs-1" href="./index.html">Necesito!</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+  
+        <div class="collapse navbar-collapse mx-2" id="navbarNav">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="./index.html">Inicio</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Productos
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="../pages/productos.html">Todos los productos</a></li>
+                <li><a class="dropdown-item" href="./index.html#destacados">Destacados</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#testimonios">Testimonios</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./quienes_somos.html">Quiénes somos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./index.html#contacto">Contacto</a>
+            </li>
+          </ul>
+          <a class="navbar-brand fs-5" href="#">
+            <i class="fas fa-shopping-cart"></i> Tienda Virtual
+          </a>
+        </div>
+      </div>
+    </nav>
+  </header>
+  
+    
+
+
+<main class="margin__top">
+
+
+
+<!-- Productos -->
+<div class="container my-4">
+  <div class="d-flex align-items-center mb-4">
+    <hr class="flex-grow-1">
+    <h2 class="text-center mx-3">Productos</h2>
+    <hr class="flex-grow-1">
+  </div>
+
+  <div class="d-flex justify-content-end align-items-center mb-4">
+    <p class="fs-6 my-0 mx-2">Ordenar por</p>
+    <select class="form-select w-auto" aria-label="Default select example">
+      <option selected value="1">Precio</option>
+      <option value="2">Nombre</option>
+    </select>
+  </div>
+
+  <div class="row">
+    <div class="col-4">
+      <div class="row">
+
+        <div class="col-12 mb-4">
+          <div class="d-flex align-items-center">
+            <hr class="flex-grow-1">
+            <h3 class="text-center mx-3">Filtros Seleccionados</h3>
+            <hr class="flex-grow-1">
+          </div>
+        </div>
+
+        <div class="col-12 mb-4">
+          <div class="d-flex align-items-center">
+            <hr class="flex-grow-1">
+            <h3 class="text-center mx-3">Categorías</h3>
+            <hr class="flex-grow-1">
+          </div>
+          <button class="btn btn-info w-100 my-2">Equipos Electrónicos y Tecnológicos</button>
+          <button class="btn btn-info w-100 my-2">Maquinaria y Herramientas</button>
+          <button class="btn btn-info w-100 my-2">Vehículos y Transporte</button>
+        </div>
+
+        <div class="col-12">
+          <div class="d-flex align-items-center">
+            <hr class="flex-grow-1">
+            <h3 class="text-center mx-3">Duración del Alquiler</h3>
+            <hr class="flex-grow-1">
+          </div>
+          <button class="btn btn-info w-100 m-1">Diario</button>
+          <button class="btn btn-info w-100 m-1">Semanal</button>
+          <button class="btn btn-info w-100 m-1">Mensual</button>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="col-8">
+      <div class="row row-cols-1 row-cols-md-3 g-4">
+        <div class="col">
+          <div class="card h-100">
+            <div class="card-img-top d-flex justify-content-center align-items-center p-4">
+              <i class="fas fa-laptop fa-5x"></i>
+            </div>
+            <div class="card-body text-center">
+              <h5 class="card-title">Laptop</h5>
+              <p class="card-text">$1500/día</p>
+              <a href="#" class="btn btn-primary">Alquilar <i class="fas fa-shopping-cart"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <div class="card-img-top d-flex justify-content-center align-items-center p-4">
+              <i class="fas fa-tools fa-5x"></i>
+            </div>
+            <div class="card-body text-center">
+              <h5 class="card-title">Herramientas</h5>
+              <p class="card-text">$1800/día</p>
+              <a href="#" class="btn btn-primary">Alquilar <i class="fas fa-shopping-cart"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <div class="card-img-top d-flex justify-content-center align-items-center p-4">
+              <i class="fas fa-car fa-5x"></i>
+            </div>
+            <div class="card-body text-center">
+              <h5 class="card-title">Vehículo</h5>
+              <p class="card-text">$2200/día</p>
+              <a href="#" class="btn btn-primary">Alquilar <i class="fas fa-shopping-cart"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <div class="card-img-top d-flex justify-content-center align-items-center p-4">
+              <i class="fas fa-camera fa-5x"></i>
+            </div>
+            <div class="card-body text-center">
+              <h5 class="card-title">Cámara</h5>
+              <p class="card-text">$2000/día</p>
+              <a href="#" class="btn btn-primary">Alquilar <i class="fas fa-shopping-cart"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <div class="card-img-top d-flex justify-content-center align-items-center p-4">
+              <i class="fas fa-blender fa-5x"></i>
+            </div>
+            <div class="card-body text-center">
+              <h5 class="card-title">Electrodoméstico</h5>
+              <p class="card-text">$1700/día</p>
+              <a href="#" class="btn btn-primary">Alquilar <i class="fas fa-shopping-cart"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <div class="card-img-top d-flex justify-content-center align-items-center p-4">
+              <i class="fas fa-chair fa-5x"></i>
+            </div>
+            <div class="card-body text-center">
+              <h5 class="card-title">Mobiliario</h5>
+              <p class="card-text">$1600/día</p>
+              <a href="#" class="btn btn-primary">Alquilar <i class="fas fa-shopping-cart"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+              <div class="card-img-top d-flex justify-content-center align-items-center p-4">
+                  <i class="fas fa-tshirt fa-5x"></i>
+              </div>
+              <div class="card-body text-center">
+                  <h5 class="card-title">Remera</h5>
+                  <p class="card-text">$1000/día</p>
+                  <a href="#" class="btn btn-primary">Alquilar <i class="fas fa-shopping-cart"></i></a>
+              </div>
+          </div>
+      </div>
+        <div class="col">
+          <div class="card h-100">
+            <div class="card-img-top d-flex justify-content-center align-items-center p-4">
+              <i class="fas fa-bicycle fa-5x"></i>
+            </div>
+            <div class="card-body text-center">
+              <h5 class="card-title">Bicicleta</h5>
+              <p class="card-text">$1400/día</p>
+              <a href="#" class="btn btn-primary">Alquilar <i class="fas fa-shopping-cart"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <div class="card-img-top d-flex justify-content-center align-items-center p-4">
+              <i class="fas fa-guitar fa-5x"></i>
+            </div>
+            <div class="card-body text-center">
+              <h5 class="card-title">Instrumento Musical</h5>
+              <p class="card-text">$1900/día</p>
+              <a href="#" class="btn btn-primary">Alquilar <i class="fas fa-shopping-cart"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <nav aria-label="Page navigation example" class="mt-4">
+        <ul class="pagination justify-content-end">
+          <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+          <li class="page-item"><a class="page-link" href="#">1</a></li>
+          <li class="page-item"><a class="page-link" href="#">2</a></li>
+          <li class="page-item"><a class="page-link" href="#">3</a></li>
+          <li class="page-item"><a class="page-link" href="#">Next</a></li>
+        </ul>
+      </nav>
+    </div>
+
+  </div>
+</div>
+
+
+
+
+</main>
+
+
+
+<div class="container mt-5">
+  <button class="btn whatsapp-icon" tabindex="0" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-content="Contactanos por WhatsApp">
+    <a class="nav-link" target="_blank" href="https://wa.me/5491111111111" aria-label="Contactar por WhatsApp">
+      <i class="fab fa-whatsapp fa-4x text-success"></i>
+    </a>
+  </button>
+</div>
+
+
+
+
+<footer class="color_footer py-4 mt-4">
+  <div class="container">
+    <div class="row justify-content-between">
+
+      <!-- Contacto -->
+      <div class="col-md-4 mb-3">
+        <h4 class="text-light">Contacto</h4>
+        <hr class="border-light">
+        <p class="text-light mb-1">
+          WhatsApp: <br>
+          <a href="tel:011-15-11111111" class="text-light">011-15-11111111</a>
+        </p>
+        <p class="text-light mb-0">
+          Mail: <br>
+          <a href="" class="text-light">necesitoInfo@necesito.com</a>
+        </p>
+      </div>
+
+      <!-- Navegación -->
+      <div class="col-md-4 mb-3">
+        <h4 class="text-light">Navegación</h4>
+        <hr class="border-light">
+        <ul class="list-unstyled text-light">
+          <li><a href="./index.html" class="text-light">Inicio</a></li>
+          <li><a href="../pages/productos.html" class="text-light">Todos los Productos</a></li>
+          <li><a href="../pages/productos.html" class="text-light">Productos Destacados</a></li>
+          <li><a href="../pages/productos.html" class="text-light">Testimonios</a></li>
+          <li><a href="./quienes_somos.html" class="text-light">Quiénes Somos</a></li>
+          <li><a href="./quienes_somos.html" class="text-light">Contacto</a></li>
+        </ul>
+      </div>
+
+      <!-- Redes Sociales -->
+      <div class="col-md-3 mb-3">
+        <h4 class="text-light">Redes Sociales</h4>
+        <hr class="border-light">
+        <div class="d-flex">
+          <a href="#" class="text-light me-3">
+            <i class="fab fa-facebook fa-2x"></i>
+          </a>
+          <a href="#" class="text-light me-3">
+            <i class="fab fa-twitter fa-2x"></i>
+          </a>
+          <a href="#" class="text-light me-3">
+            <i class="fab fa-instagram fa-2x"></i>
+          </a>
+          <a href="#" class="text-light">
+            <i class="fab fa-linkedin fa-2x"></i>
+          </a>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+</footer>
+
+
+
+
+
+<!-- Font Awesome  -->
+<script src="https://kit.fontawesome.com/60be70fbe4.js" crossorigin="anonymous"></script>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js" integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.min.js" integrity="sha384-Y4oOpwW3duJdCWv5ly8SCFYWqFDsfob/3GkgExXKV4idmbt98QcxXYs9UoXAB7BZ" crossorigin="anonymous"></script>
+
+<script src="../js/main.js"></script>
+</body>
+</html>

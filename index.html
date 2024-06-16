@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sitio Web</title>
+  
+    <!-- Style  -->
+    <link rel="stylesheet" href="../css/style.css">
+
+  
+
+    <!-- BOOTSTRAP   -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/css/bootstrap.min.css">
+ 
+
+
+
+</head>
+<body>
+
+  <header class="mb-5 fixed-top color_header ">
+    <div class="border-bottom color_header">
+      <div class="container d-flex justify-content-between align-items-center py-1">
+        <h1 class="fs-6 align-self-center my-0">
+          <i class="fas fa-map-marker-alt"></i> Buenos Aires | 
+          <i class="fab fa-whatsapp"></i> 011-15-11111111 | 
+          <i class="fas fa-envelope"></i> <a href="mailto:necesitoInfo@necesito.com" class="text-dark">necesitoInfo@necesito.com</a>
+        </h1>
+        <div>
+          <select class="form-select" aria-label="Seleccionar idioma">
+            <option selected value="es">Español</option>
+            <option value="en">English</option>
+          </select>
+        </div>
+      </div>
+    </div>
+  
+    <nav class="navbar navbar-expand-lg navbar-light bg-body-tertiary">
+      <div class="container">
+        <a class="navbar-brand fs-1" href="./index.html">Necesito!</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+  
+        <div class="collapse navbar-collapse mx-2" id="navbarNav">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="./index.html">Inicio</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Productos
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="../pages/productos.html">Todos los productos</a></li>
+                <li><a class="dropdown-item" href="#destacados">Destacados</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#testimonios">Testimonios</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./quienes_somos.html">Quiénes somos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contacto">Contacto</a>
+            </li>
+          </ul>
+          <a class="navbar-brand fs-5" href="#">
+            <i class="fas fa-shopping-cart"></i> Tienda Virtual
+          </a>
+        </div>
+      </div>
+    </nav>
+  </header>
+  
+    
+
+<main >
+
+
+
+  <div class="container-fluid p-0">
+    <div class="position-relative">
+        <img src="../img/ejemplo.png" class="img-fluid w-100" alt="Imagen de ejemplo">
+        <div class="position-absolute top-50 start-50 translate-middle p-4 text-center text-white bg-opacity rounded">
+            <h1 class="display-1">Necesito!</h1>
+            <p class="lead">La plataforma líder en alquiler de productos para todas tus necesidades.</p>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<span id="destacados"></span>
+
+<!-- Productos destacados -->
+<div class="container" >
+<div class="container d-flex align-items-center mt-4" >
+  <hr class="flex-grow-1">
+  <h2 class="text-center mx-3">Destacados</h2>
+  <hr class="flex-grow-1">
+</div>
+
+
+
+<!-- Productos destacados -->
+<div class="container">
+  <div class="row row-cols-1 row-cols-md-3 g-4">
+
+ 
+      <div class="col">
+          <div class="card h-100">
+              <img src="../img/Productos/computacion.png" class="card-img-top fixed-size-img" alt="Producto 1">
+              <div class="card-body text-center">
+                  <h5 class="card-title">Conjunto de equipos de Computación</h5>
+                  <p class="card-text">$5000/día</p>
+                  <a href="#" class="btn btn-primary">Alquilar <i class="fas fa-shopping-cart"></i></a>
+              </div>
+          </div>
+      </div>
+
+   
+      <div class="col">
+          <div class="card h-100">
+              <img src="../img/Productos/setLimieza.png"class="card-img-top fixed-size-img" alt="Producto 2">
+              <div class="card-body text-center">
+                  <h5 class="card-title">Set de Limieza</h5>
+                  <p class="card-text">$1500/día</p>
+                  <a href="#" class="btn btn-primary">Alquilar <i class="fas fa-shopping-cart"></i></a>
+              </div>
+          </div>
+      </div>
+
+
+  
+
+      <div class="col">
+          <div class="card h-100">
+              <img src="../img/Productos/mesa.png" class="card-img-top fixed-size-img" alt="Producto 3">
+              <div class="card-body text-center">
+                  <h5 class="card-title">Juego de comedor</h5>
+                  <p class="card-text">$1800/día</p>
+                  <a href="#" class="btn btn-primary">Alquilar <i class="fas fa-shopping-cart"></i></a>
+              </div>
+          </div>
+      </div>
+
+
+      <div class="col">
+          <div class="card h-100">
+              <img src="../img/Productos/setMedico.png" class="card-img-top fixed-size-img" alt="Producto 4">
+              <div class="card-body text-center">
+                  <h5 class="card-title">Conjunto Herramientas Medicas</h5>
+                  <p class="card-text">$2200/día</p>
+                  <a href="#" class="btn btn-primary">Alquilar <i class="fas fa-shopping-cart"></i></a>
+              </div>
+          </div>
+      </div>
+
+ 
+      <div class="col">
+          <div class="card h-100">
+              <img src="../img/Productos/trajeBombero.png" class="card-img-top fixed-size-img" alt="Producto 5">
+              <div class="card-body text-center">
+                  <h5 class="card-title">Traje de Bombero</h5>
+                  <p class="card-text">$1900/día</p>
+                  <a href="#" class="btn btn-primary">Alquilar <i class="fas fa-shopping-cart"></i></a>
+              </div>
+          </div>
+      </div>
+
+ 
+      <div class="col">
+          <div class="card h-100">
+              <img src="../img/Productos/cuadrosPinturas.png" class="card-img-top fixed-size-img" alt="Producto 6">
+              <div class="card-body text-center">
+                  <h5 class="card-title">Cuadros genericos de Pintura</h5>
+                  <p class="card-text">$2500/día</p>
+                  <a href="#" class="btn btn-primary">Alquilar <i class="fas fa-shopping-cart"></i></a>
+              </div>
+          </div>
+      </div>
+
+  </div>
+
+  <!-- Ver todos los productos -->
+  <div class="row mt-3">
+      <div class="col text-center">
+          <a href="#" class="btn btn-dark btn-lg">Ver todos los productos</a>
+      </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+<span id="testimonios"></span>
+
+    <!-- Sección de testimonios -->
+    <section class="container my-5">
+      <div class="container">
+        <div class="container d-flex align-items-center my-4">
+          <hr class="flex-grow-1">
+          <h2 class="text-center mx-3">Testimonios</h2>
+          <hr class="flex-grow-1">
+        </div>
+      </div>
+
+
+      
+ 
+          <!-- Primer testimonio -->
+      
+            <div class="row">
+
+              <div class="col-lg-4 mb-4">
+                <div class="card">
+                  <div class="card-body">
+                    <p class="card-text">Excelente servicio de alquiler de productos. ¡100% recomendado!</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <i class="fas fa-user-circle fa-3x"></i>
+                      <span class="text-muted">Juan Pérez</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Segundo testimonio -->
+              <div class="col-lg-4 mb-4">
+                <div class="card">
+                  <div class="card-body">
+                    <p class="card-text">Rápido y confiable. Siempre encuentro lo que necesito en Necesito.</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <i class="fas fa-user-circle fa-3x"></i>
+                      <span class="text-muted">María López</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Tercer testimonio -->
+              <div class="col-lg-4 mb-4">
+                <div class="card">
+                  <div class="card-body">
+                    <p class="card-text">Increíble variedad de productos disponibles. Muy satisfecho con el servicio.</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <i class="fas fa-user-circle fa-3x"></i>
+                      <span class="text-muted">Ana García</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+       
+
+            <div class="row">
+              <!-- Cuarto testimonio -->
+              <div class="col-lg-4 mb-4">
+                <div class="card">
+                  <div class="card-body">
+                    <p class="card-text">Muy buen servicio. Siempre encuentro lo que necesito.</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <i class="fas fa-user-circle fa-3x"></i>
+                      <span class="text-muted">Roberto Martínez</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Quinto testimonio -->
+              <div class="col-lg-4 mb-4">
+                <div class="card">
+                  <div class="card-body">
+                    <p class="card-text">Rápido y eficiente. Los productos están en excelente estado.</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <i class="fas fa-user-circle fa-3x"></i>
+                      <span class="text-muted">Laura González</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Sexto testimonio -->
+              <div class="col-lg-4 mb-4">
+                <div class="card">
+                  <div class="card-body">
+                    <p class="card-text">Una gran variedad de productos y precios accesibles.</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <i class="fas fa-user-circle fa-3x"></i>
+                      <span class="text-muted">Pedro Sánchez</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+         
+
+      </div>
+    </section>
+
+
+
+
+
+  <span id="contacto"></span>
+
+
+<!-- Sección de Contacto -->
+<section class="container mt-5 pt-5">
+  <div class="row">
+    <!-- Formulario de Contacto -->
+    <div class="col-md-6">
+      <h2>Contacto</h2>
+      <form>
+        <div class="mb-3">
+          <label for="nombre" class="form-label">Nombre</label>
+          <input type="text" class="form-control" id="nombre" required>
+        </div>
+        <div class="mb-3">
+          <label for="email" class="form-label">Correo Electrónico</label>
+          <input type="email" class="form-control" id="email" required>
+        </div>
+        <div class="mb-3">
+          <label for="mensaje" class="form-label">Mensaje</label>
+          <textarea class="form-control" id="mensaje" rows="5" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Enviar</button>
+      </form>
+    </div>
+
+    <!-- Información de Contacto y Mapa -->
+    <div class="col-md-6">
+      <h2>Encuéntranos</h2>
+      <p>
+        <i class="fas fa-map-marker-alt"></i> Dirección: Calle Falsa 123, Buenos Aires
+      </p>
+      <p>
+        <i class="fas fa-phone"></i> Teléfono: <a href="tel:011-15-11111111">011-15-11111111</a>
+      </p>
+      <p>
+        <i class="fas fa-envelope"></i> Email: <a href="mailto:necesitoInfo@necesito.com">necesitoInfo@necesito.com</a>
+      </p>
+      <p>
+        <i class="fas fa-clock"></i> Horarios: Lunes a Viernes, 9:00 - 18:00
+      </p>
+      <div id="map"></div>
+    </div>
+  </div>
+
+
+
+<!-- Redes Sociales -->
+<div class="container mt-5">
+  <div class="row mt-4">
+
+    <div class="d-flex text-center justify-content-center">
+    <h2>Síguenos en Redes Sociales</h2>
+  </div>
+    <div class="d-flex text-center justify-content-center">
+     
+      <a href="https://www.facebook.com/tuperfil" class="text-dark me-3" aria-label="Facebook" target="_blank" rel="noopener noreferrer">
+        <i class="fab fa-facebook fa-2x "></i>
+      </a>
+      <a href="https://twitter.com/tuperfil" class="text-dark me-3" aria-label="Twitter" target="_blank" rel="noopener noreferrer">
+        <i class="fab fa-twitter fa-2x"></i>
+      </a>
+      <a href="https://www.instagram.com/tuperfil" class="text-dark me-3" aria-label="Instagram" target="_blank" rel="noopener noreferrer">
+        <i class="fab fa-instagram fa-2x"></i>
+      </a>
+      <a href="https://www.linkedin.com/in/tuperfil" class="text-dark" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer">
+        <i class="fab fa-linkedin fa-2x"></i>
+      </a>
+    </div>
+
+
+
+
+ 
+  </div>
+</div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</main>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="container mt-5">
+  <button class="btn whatsapp-icon" tabindex="0" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-content="Contactanos por WhatsApp">
+    <a class="nav-link" target="_blank" href="https://wa.me/5491111111111" aria-label="Contactar por WhatsApp">
+      <i class="fab fa-whatsapp fa-4x text-success"></i>
+    </a>
+  </button>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<footer class="color_footer py-4 mt-4">
+  <div class="container">
+    <div class="row justify-content-between">
+
+      <!-- Contacto -->
+      <div class="col-md-4 mb-3">
+        <h4 class="text-light">Contacto</h4>
+        <hr class="border-light">
+        <p class="text-light mb-1">
+          WhatsApp: <br>
+          <a href="tel:011-15-11111111" class="text-light">011-15-11111111</a>
+        </p>
+        <p class="text-light mb-0">
+          Mail: <br>
+          <a href="" class="text-light">necesitoInfo@necesito.com</a>
+        </p>
+      </div>
+
+      <!-- Navegación -->
+      <div class="col-md-4 mb-3">
+        <h4 class="text-light">Navegación</h4>
+        <hr class="border-light">
+        <ul class="list-unstyled text-light">
+          <li><a href="./index.html" class="text-light">Inicio</a></li>
+          <li><a href="../pages/productos.html" class="text-light">Todos los Productos</a></li>
+          <li><a href="../pages/productos.html" class="text-light">Productos Destacados</a></li>
+          <li><a href="../pages/productos.html" class="text-light">Testimonios</a></li>
+          <li><a href="./quienes_somos.html" class="text-light">Quiénes Somos</a></li>
+          <li><a href="./quienes_somos.html" class="text-light">Contacto</a></li>
+        </ul>
+      </div>
+
+      <!-- Redes Sociales -->
+      <div class="col-md-3 mb-3">
+        <h4 class="text-light">Redes Sociales</h4>
+        <hr class="border-light">
+        <div class="d-flex">
+          <a href="#" class="text-light me-3">
+            <i class="fab fa-facebook fa-2x"></i>
+          </a>
+          <a href="#" class="text-light me-3">
+            <i class="fab fa-twitter fa-2x"></i>
+          </a>
+          <a href="#" class="text-light me-3">
+            <i class="fab fa-instagram fa-2x"></i>
+          </a>
+          <a href="#" class="text-light">
+            <i class="fab fa-linkedin fa-2x"></i>
+          </a>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+</footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Font Awesome  -->
+<script src="https://kit.fontawesome.com/60be70fbe4.js" crossorigin="anonymous"></script>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js" integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.min.js" integrity="sha384-Y4oOpwW3duJdCWv5ly8SCFYWqFDsfob/3GkgExXKV4idmbt98QcxXYs9UoXAB7BZ" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="../js/main.js"></script>
+</body>
+</html>
